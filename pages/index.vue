@@ -8,7 +8,7 @@
       </div>
       <!-- level 1 -->
       <div class="w-full gap-2  flex flex-col">
-        <h2 class="text-xl font-bold">Level 11</h2>
+        <h2 class="text-xl font-bold">Level 0</h2>
         <div class="w-100 flex justify-start items-center gap-4">
           <ClubCard v-for="club in groups.first" :key="club.id" :clubData="club" />
         </div>
