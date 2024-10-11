@@ -1,10 +1,10 @@
 <template>
-    <VCard @click="selectClub" :class="selectedClub?.id === props.clubData?.id && 'bg-black !text-white'" class="cursor-pointer club-card px-0 relative">
+    <VCard @click="selectClub" :class="selectedClub?.id === props.clubData?.id && 'bg-blue-500 !text-white'" class="cursor-pointer club-card px-0 relative">
         <VCardText>
             <div class="flex flex-col gap-3 justify-center items-center">
                 <img width="40px" :src="props.clubData?.logo"/>
                 <div class="flex flex-col mt-2 justify-center items-center">
-                    <h3 :class="selectedClub?.id === props.clubData?.id ? '!text-white' : 'text-black'" class="text-center">{{ props.clubData?.clubName }}</h3>
+                    <h3 :class="selectedClub?.id === props.clubData?.id ? '!text-white' : 'text-blue-500'" class="text-center">{{ props.clubData?.clubName }}</h3>
                     <span class="text-center">{{ props.clubData?.country }}</span>
                 </div>
             </div>
